@@ -26,7 +26,7 @@ app.initializers.add('hamcq/pangujs', () => {
 
   extend(DiscussionList.prototype, 'view', function () {
     if(app.forum.data.attributes.contentPanguJs){
-      pangu.spacingPage();
+      pangu.spacingElementByClassName("DiscussionListItem-title");
       return;
     }
     if(!app.session.user){
