@@ -33,7 +33,7 @@ app.initializers.add('hamcq/pangujs', () => {
       return;
     }
     if(app.session.user.preferences().panguJsEnable){
-      pangu.spacingElementByClassName("DiscussionListItem-main");
+      pangu.spacingElementByClassName("DiscussionListItem-title");
     }
   });
 
